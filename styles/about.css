@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+:root {
+  --primary-color: #1D3C60;
+  --secondary-color: #5D3FD3;
+  --accent1-color: #E63946;
+  --accent2-color: #A8DADC;
+  --background: #121212;
+  --text: #F1F1F1;
+
+  --headline-color-on-light: #0B0C2A;
+  --headline-color-on-dark: #F1F1F1;
+
+  --heading-font: 'Poppins', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
+
+  --paragraph-color-on-light: #333333;
+  --paragraph-color-on-dark: #F9F9F9;
+  --paragraph-background-color: #1D3C60;
+
+  --nav-background-color: #0B0C2A;
+  --nav-link-color: #F1F1F1;
+  --nav-hover-link-color: #A8DADC;
+  --nav-hover-background-color: #1D3C60;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ html, body {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-dark);
+  }
+
+.about {
+    padding: 3em 2em;
+    background-color: var(--accent1-color);
+    font-family: var(--paragraph-font);
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-image {
+    float: right;
+    width: 200px;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .about p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+  }
+  
+  .clear-wrap {
+    clear: both;
+  }
+  
+
+  .about-projects {
+    margin-top: 4em;
+    padding: 2em;
+    background-color: var(--accent2-color);
+    text-align: center;
+  }
+  
+  /* .about-projects h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  } */
+  
+  .about-project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-project-card {
+    background-color: var(--background);
+    border: 1px solid var(--accent1-color);
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* .about-project-card h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+  } */
+  
+  .about-project-card p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
