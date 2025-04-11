@@ -344,13 +344,31 @@ blockquote {
 }
 
 .name-banner {
-  text-align: center;
+  background-color: var(--paragraph-color-on-light);
+  color: var(--paragraph-color-on-dark);
   font-family: var(--heading-font);
   font-size: 2em;
-  color: var(--accent2-color);
-  margin-bottom: 1em;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 1.5em auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInSlideDown 0.8s ease-out forwards;
+  opacity: 0;
 }
 
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero-container {
   position: relative;
 }
