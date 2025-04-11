@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left"><img src="pics/space_rd.jpg" alt="Logo image"></div> 
+         <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+         </ul>
+         <div class="nav-right">Nathanael King<span>.dev</span></div>
+         <button id="toggle-dark">Toggle Dark Mode</button>
+     </nav>
+     <form action="https://formspree.io/f/xqapnzee" method="POST" class="contact-form">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+      
+        <button type="submit" class="cta-button">Send</button>
+      </form>
+      
+   <footer>
+    <p>© 2025 Nathanael King. All rights reserved.</p>
+  </footer>
+</body>
+</html>
