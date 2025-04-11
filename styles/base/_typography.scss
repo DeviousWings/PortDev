@@ -77,3 +77,23 @@ body {
     color: var(--accent1-color);
   }
   
+
+  h1, h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+  }
+  
+  html {
+    font-size: 100%; // = 16px
+  }
+  
+  @media (max-width: 600px) {
+    html {
+      font-size: 95%; // Slightly smaller text on tiny screens
+    }
+  }
+  

@@ -159,6 +159,24 @@ blockquote {
   color: var(--accent1-color);
 }
 
+h1, h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 95%;
+  }
+}
 /* styles/components/_buttons.scss */
 .button,
 .cta-button,
@@ -269,6 +287,17 @@ blockquote {
   transition: color 0.3s ease;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -326,6 +355,108 @@ blockquote {
   color: var(--accent2-color);
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5em;
+}
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 16px;
+    padding: 1em;
+  }
+  header,
+  footer {
+    padding: 1em;
+    text-align: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .hero-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .hero-right {
+    display: none;
+  }
+  .name-banner {
+    font-size: 1.2rem;
+    padding: 0.5em;
+    background-color: transparent;
+    color: var(--accent2-color);
+    box-shadow: none;
+  }
+  .project-grid,
+  .about-project-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image {
+    margin-bottom: 1em;
+  }
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
+  .contact-form {
+    padding: 1em;
+    font-size: 1rem;
+  }
+  .cta-button,
+  .github-link,
+  button[type=submit] {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75em;
+    margin-top: 1em;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    line-height: 1.4;
+  }
+  p {
+    margin-bottom: 0.75em;
+  }
+}
 .hero {
   background-image: url("../pics/space.jpg");
   background-position: center;
@@ -506,6 +637,26 @@ blockquote {
   border-left: none;
   border-top: none;
   animation-delay: 0.6s;
+}
+
+.hero-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+@media (max-width: 700px) {
+  .hero-main {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hero-right {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-top: 1em;
 }
 
 footer {

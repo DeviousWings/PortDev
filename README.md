@@ -11,5 +11,5 @@
 - [x] test the colors.
 - [ ] add a 3rd page for examples of what you can do.
 - [x] Add contact me
-- [] Fix Lighthouse 
-- [] Resize Images portrait and logo
+- [x] Fix Lighthouse 
+- [x] Resize Images portrait and logo

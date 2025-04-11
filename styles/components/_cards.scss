@@ -57,3 +57,15 @@
     font-family: var(--paragraph-font);
     transition: color 0.3s ease;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+  }
+  
