@@ -1,0 +1,79 @@
+/* styles/base/_typography.scss */
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1.1rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  /* Paragraphs */
+  p {
+    font-size: 1rem;
+    margin-bottom: 1em;
+    color: var(--text);
+  }
+  
+  /* Links */
+  a {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: var(--accent1-color);
+    }
+  }
+  
+  /* Lists */
+  ul, ol {
+    margin-bottom: 1em;
+    padding-left: 2em;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--accent2-color);
+    padding-left: 1em;
+    margin: 1em 0;
+    color: var(--accent1-color);
+  }
+  

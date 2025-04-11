@@ -1,0 +1,49 @@
+/* styles/components/_buttons.scss */
+
+.button,
+.cta-button,
+.github-link {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent2-color);
+  color: var(--nav-background-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--heading-font);
+}
+
+.button:hover,
+.cta-button:hover,
+.github-link:hover {
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+/* Outline Button Style */
+.button-outline {
+  background: transparent;
+  border: 2px solid var(--accent2-color);
+  color: var(--accent2-color);
+}
+
+.button-outline:hover {
+  background-color: var(--accent2-color);
+  color: var(--nav-background-color);
+}
+
+/* Large Button */
+.button-large {
+  font-size: 1.1rem;
+  padding: 1em 2em;
+}
+
+/* Small Button */
+.button-small {
+  font-size: 0.875rem;
+  padding: 0.5em 1em;
+}

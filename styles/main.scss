@@ -1,0 +1,20 @@
+ /* main.scss */
+
+@use './base/_variable';
+@use './base/_reset';
+@use './base/_typography';
+
+@use './components/_buttons';
+@use './components/_cards';
+@use './components/_navbar';
+
+@use './layout/_hero';
+@use './layout/_footer';
+@use './layout/_projects';
+
+@use './pages/_home';
+@use './pages/_about';
+
+@use './themes/_dark';
+@use './themes/_light';
+

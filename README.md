@@ -8,3 +8,4 @@
 - [x] background
 - [ ] Fix about page.
 - [ ] test the colors.
+- [ ] add a 3rd page for examples of what you can do.

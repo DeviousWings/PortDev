@@ -1,0 +1,520 @@
+/* main.scss */
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+:root {
+  --primary-color: #1D3C60;
+  --secondary-color: #5D3FD3;
+  --accent1-color: #E63946;
+  --accent2-color: #A8DADC;
+  --background: #121212;
+  --text: #F1F1F1;
+  --headline-color-on-light: #0B0C2A;
+  --headline-color-on-dark: #F1F1F1;
+  --heading-font: "Poppins", sans-serif;
+  --paragraph-font: "Roboto", sans-serif;
+  --paragraph-color-on-light: #333333;
+  --paragraph-color-on-dark: #F9F9F9;
+  --paragraph-background-color: #1D3C60;
+  --nav-background-color: #0B0C2A;
+  --nav-link-color: #F1F1F1;
+  --nav-hover-link-color: #A8DADC;
+  --nav-hover-background-color: #1D3C60;
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: var(--paragraph-font, sans-serif);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--headline-color-on-light);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+  color: var(--headline-color-on-dark);
+}
+
+/* styles/base/_typography.scss */
+body {
+  font-family: var(--paragraph-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  color: var(--text);
+}
+
+/* Links */
+a {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--accent1-color);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Blockquotes */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--accent2-color);
+  padding-left: 1em;
+  margin: 1em 0;
+  color: var(--accent1-color);
+}
+
+/* styles/components/_buttons.scss */
+.button,
+.cta-button,
+.github-link {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent2-color);
+  color: var(--nav-background-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--heading-font);
+}
+
+.button:hover,
+.cta-button:hover,
+.github-link:hover {
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+/* Outline Button Style */
+.button-outline {
+  background: transparent;
+  border: 2px solid var(--accent2-color);
+  color: var(--accent2-color);
+}
+
+.button-outline:hover {
+  background-color: var(--accent2-color);
+  color: var(--nav-background-color);
+}
+
+/* Large Button */
+.button-large {
+  font-size: 1.1rem;
+  padding: 1em 2em;
+}
+
+/* Small Button */
+.button-small {
+  font-size: 0.875rem;
+  padding: 0.5em 1em;
+}
+
+.projects {
+  padding: 4em 2em;
+  background-color: var(--paragraph-color-on-dark);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.projects h2 {
+  font-family: var(--heading-font);
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 1em;
+}
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  background-color: var(--accent2-color);
+  border: 2px solid var(--accent1-color);
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  color: var(--headline-color-on-light);
+}
+
+.project-card:hover {
+  background-color: var(--nav-link-color);
+  color: var(--headline-color-on-light);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-card:visited,
+.project-card:active {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.project-card h3,
+.project-card p {
+  color: inherit;
+  font-family: var(--paragraph-font);
+  transition: color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  font-size: 1.5em;
+  color: var(--accent2-color);
+}
+
+.nav-left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+.nav-links a {
+  color: var(--nav-link-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: 0.3s;
+  font-family: var(--heading-font);
+}
+
+.nav-links a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+  border-radius: 5px;
+}
+
+.nav-right {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--nav-link-color);
+  font-family: var(--heading-font);
+}
+
+.nav-right span {
+  color: var(--accent2-color);
+}
+
+.hero {
+  background-image: url("../pics/space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 2em;
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.name-banner {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 1.2em;
+  color: var(--accent2-color);
+  margin-bottom: 1em;
+}
+
+.hero-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+/* .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 0;
+} */
+.hero-right {
+  position: absolute;
+  top: -2em;
+  right: 1em;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center perfectly */
+  text-align: center;
+  z-index: 1;
+  background-color: var(--paragraph-color-on-light);
+  padding: 10px 20px;
+}
+
+.hero-text h1 {
+  font-family: var(--heading-font);
+  font-size: 2.5em;
+  color: white;
+  line-height: 1.3;
+}
+
+.cta-button,
+.github-link {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  background-color: var(--accent2-color);
+  color: var(--nav-background-color);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.hero-text h1 span {
+  color: var(--accent2-color);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #FF4F4F; /* bright red accent */
+  opacity: 0;
+  animation: drawLines 1.2s ease-out forwards;
+}
+
+/* Top-left line */
+.hero::before {
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 60px;
+  border-right: none;
+  border-bottom: none;
+  animation-delay: 0.2s;
+}
+
+/* Bottom-right line */
+.hero::after {
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 60px;
+  border-left: none;
+  border-top: none;
+  animation-delay: 0.6s;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--headline-color-on-dark);
+  padding: 2em 1em;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+
+footer a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent1-color);
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+footer .footer-links a {
+  font-size: 1rem;
+}
+
+.home {
+  padding: 4em 2em;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.home-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: var(--primary-color);
+}
+
+.home-intro {
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2em;
+  line-height: 1.6;
+}
+
+.featured-projects {
+  margin-top: 3em;
+}
+
+.featured-projects h2 {
+  font-family: var(--heading-font);
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

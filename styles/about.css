@@ -43,7 +43,7 @@
   h5,
   h6 {
     font-family: var(--heading-font);
-    color: var(--headline-color-on-dark);
+    color: var(--headline-color-on-light);
   }
 
 .about {
