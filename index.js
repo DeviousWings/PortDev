@@ -6,13 +6,13 @@ const projects = [
       link: "https://deviouswings.github.io/SpaceSite/"
     },
     {
-      title: "Budget Buddy",
-      description: "Track your monthly spending with a dynamic budget dashboard.",
+      title: "Coming Soon...",
+      description: "Coming Soon...",
       link: "#"
     },
     {
-      title: "Responsive Landing Page",
-      description: "A mobile-friendly front-end layout with scroll effects.",
+      title: "Coming Soon...",
+      description: "Coming Soon...",
       link: "#"
     }
   ];
