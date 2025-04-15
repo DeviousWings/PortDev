@@ -3,7 +3,7 @@ const projects = [
     {
       title: "Space Library",
       description: "Space Library of Nathanael King.",
-      link: "https://deviouswings.github.io/SpaceSite/"
+      link: "https://spacelibrary.netlify.app/"
     },
     {
       title: "Coming Soon...",
