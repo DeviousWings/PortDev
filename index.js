@@ -6,7 +6,7 @@ const projects = [
       link: "https://cosmiclibrary.netlify.app/"
     },
     {
-      title: "Coming Soon...",
+      title: "AI Stock Exchange",
       description: "Coming Soon...",
       link: "#"
     },
