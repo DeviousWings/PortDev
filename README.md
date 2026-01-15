@@ -6,12 +6,12 @@ https://deviouswings.github.io/PortDev/
 
 <h3>To do list</p>
 - [] Update safireproject.com website and make it look better. <br>
-- [] Make it Mobile frendly. 
-- [x] Hero needs a bigger better picture of me
-- [x] background
-- [x] Fix about page.
-- [x] test the colors.
-- [ ] add a 3rd page for examples of what you can do.
-- [x] Add contact me
-- [x] Fix Lighthouse 
-- [x] Resize Images portrait and logo
+- [] Make it Mobile frendly. <br>
+- [x] Hero needs a bigger better picture of me<br>
+- [x] background<br>
+- [x] Fix about page.<br>
+- [x] test the colors.<br>
+- [ ] add a 3rd page for examples of what you can do.<br>
+- [x] Add contact me<br>
+- [x] Fix Lighthouse <br>
+- [x] Resize Images portrait and logo<br>
