@@ -103,8 +103,6 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav {
   list-style-type: none;
   display: flex;
 }

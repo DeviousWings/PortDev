@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node:*)",
+      "Bash(where python3:*)",
+      "Bash(where php:*)",
+      "Read(//c/Users/nkste/scoop/shims/**)",
+      "Read(//c/ProgramData/chocolatey/bin/**)",
+      "Read(//c/Users/nkste/AppData/Local/Programs/**)",
+      "Bash(echo $PATH)",
+      "Bash(cmd.exe /c \"where node & where python & where npx\")",
+      "Bash(cmd.exe /c \"py --version\")",
+      "Bash(cmd.exe /c \"python --version\")",
+      "Bash(cmd.exe /c \"python3 --version\")",
+      "Bash(where npx:*)",
+      "Bash(node -e \"require\\(''child_process''\\).execSync\\(''npx serve --version'', {stdio:''inherit''}\\)\")",
+      "Bash(node -e \"console.log\\(process.execPath\\)\")",
+      "Bash(node -e \"const {execSync}=require\\(''child_process''\\); console.log\\(execSync\\(''npm root -g''\\).toString\\(\\).trim\\(\\)\\)\")",
+      "Bash(npm install:*)",
+      "Bash(ls \"/c/Users/nkste/OneDrive/Career/2_SteeleProgramming/1_Portfolio/node_modules/.bin/serve\"*)"
+    ]
+  }
+}

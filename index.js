@@ -50,10 +50,33 @@ const projects = [
     console.log("Switched to:", currentMode);
   }
   
+  // ====== Hamburger Menu ======
+  function initHamburger() {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    if (!hamburger || !navLinks) return;
+
+    hamburger.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      hamburger.classList.toggle("open", isOpen);
+      hamburger.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        hamburger.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
   // ====== DOM Interaction Example ======
   document.addEventListener("DOMContentLoaded", () => {
     displayProjects();
-  
+    initHamburger();
+
     const darkModeButton = document.getElementById("toggle-dark");
     if (darkModeButton) {
       darkModeButton.addEventListener("click", toggleDarkMode);
