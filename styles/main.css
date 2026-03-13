@@ -1,4 +1,5 @@
 /* ====== main.css — Portfolio of Nathanael King ====== */
+
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 
 /* ====== CSS Variables ====== */
@@ -313,9 +314,17 @@ html {
 }
 
 /* Animate hamburger to X when open */
-.hamburger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
 
 /* ====== Mobile ====== */
 @media (max-width: 700px) {
@@ -344,9 +353,16 @@ html {
 
   .nav-links li { width: 100%; text-align: center; }
 
-  .nav-links a { display: block; padding: 0.75em 1em; width: 100%; }
+  .nav-links a {
+    display: block;
+    padding: 0.75em 1em;
+    width: 100%;
+  }
 
-  .navbar { position: relative; flex-wrap: wrap; }
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
 
   .hero {
     height: auto;
@@ -377,7 +393,10 @@ html {
     padding: 1em;
   }
 
-  .hero-text h1 { font-size: 1.8rem; line-height: 1.2; }
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
 
   .hero-right { display: none; }
 
@@ -388,28 +407,49 @@ html {
     max-width: 100%;
   }
 
-  .project-grid, .about-project-grid { grid-template-columns: 1fr; }
+  .project-grid, .about-project-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .about-card { flex-direction: column; text-align: center; }
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .about-image { margin-bottom: 1em; }
+
   .about-text h2 { font-size: 1.6rem; }
   .about-text p { font-size: 1rem; }
 
-  .contact-form { padding: 1em; font-size: 1rem; }
+  .contact-form {
+    padding: 1em;
+    font-size: 1rem;
+  }
 
-  .cta-button, .github-link, button[type=submit] {
+  .cta-button, .github-link, button[type="submit"] {
     width: 100%;
     font-size: 1rem;
     padding: 0.75em;
     margin-top: 1em;
   }
 
-  .footer-links { flex-direction: column; gap: 0.5em; }
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
   body { line-height: 1.4; }
   p { margin-bottom: 0.75em; }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ====== Hero Section ====== */
@@ -448,16 +488,13 @@ html {
 }
 
 @keyframes fadeInSlideDown {
-  0%   { opacity: 0; transform: translateY(-20px); }
+  0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-.hero-container {
-  position: relative;
-}
+.hero-container { position: relative; }
 
-.hero-container::before,
-.hero-container::after {
+.hero-container::before, .hero-container::after {
   content: "";
   position: absolute;
   border: 4px solid var(--accent1-color);
@@ -466,22 +503,28 @@ html {
 }
 
 .hero-container::before {
-  top: 0; left: 0;
-  width: 150px; height: 60px;
-  border-right: none; border-bottom: none;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 60px;
+  border-right: none;
+  border-bottom: none;
   animation-delay: 0.2s;
 }
 
 .hero-container::after {
-  bottom: 0; right: 0;
-  width: 150px; height: 60px;
-  border-left: none; border-top: none;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 60px;
+  border-left: none;
+  border-top: none;
   animation-delay: 0.6s;
 }
 
 @keyframes drawLines {
-  0%   { opacity: 0; transform: scaleX(0) scaleY(0); }
-  50%  { opacity: 1; transform: scaleX(1.2) scaleY(0.2); }
+  0% { opacity: 0; transform: scaleX(0) scaleY(0); }
+  50% { opacity: 1; transform: scaleX(1.2) scaleY(0.2); }
   100% { opacity: 1; transform: scaleX(1) scaleY(1); }
 }
 
@@ -548,21 +591,30 @@ html {
 }
 
 .hero::before {
-  top: 0; left: 0;
-  width: 150px; height: 60px;
-  border-right: none; border-bottom: none;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 60px;
+  border-right: none;
+  border-bottom: none;
   animation-delay: 0.2s;
 }
 
 .hero::after {
-  bottom: 0; right: 0;
-  width: 150px; height: 60px;
-  border-left: none; border-top: none;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 60px;
+  border-left: none;
+  border-top: none;
   animation-delay: 0.6s;
 }
 
 @media (max-width: 700px) {
-  .hero-main { flex-direction: column; text-align: center; }
+  .hero-main {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* ====== Footer ====== */
@@ -666,11 +718,70 @@ footer .footer-links a {
 }
 
 @media (max-width: 700px) {
-  .about .about-card { flex-direction: column; text-align: center; }
+  .about .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .about .about-image { margin-bottom: 1em; }
   .about .about-text h2 { font-size: 1.6rem; }
   .about .about-text p { font-size: 1rem; }
+
   .section-divider { width: 80%; }
+}
+
+/* ====== Certifications Section ====== */
+.certifications {
+  padding: 3em 2em;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.certifications h2 {
+  font-family: var(--heading-font);
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 1.5em;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cert-badge {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.cert-name {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
 }
 
 /* ====== Contact Page ====== */
@@ -696,8 +807,7 @@ footer .footer-links a {
   color: var(--primary-color);
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   padding: 0.75em;
   font-size: 1rem;
   font-family: var(--paragraph-font);
@@ -707,8 +817,7 @@ footer .footer-links a {
   color: var(--text);
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
   outline: none;
   border-color: var(--accent2-color);
   box-shadow: 0 0 0 2px rgba(168, 218, 220, 0.4);
@@ -730,4 +839,4 @@ footer .footer-links a {
 .contact-form .cta-button:hover {
   background-color: var(--accent1-color);
   color: #fff;
-  }
+}
