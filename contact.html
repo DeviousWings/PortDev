@@ -5,39 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css" />
     <meta name="description" content="Contact Nathanael King for freelance or full-time web development opportunities." />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Contact Me | Nathanael King" />
+    <meta property="og:description" content="Get in touch with Nathanael King for freelance or full-time web development opportunities." />
+    <meta property="og:image" content="https://deviouswings.github.io/PortDev/pics/portrait.jpg" />
+    <meta property="og:url" content="https://deviouswings.github.io/PortDev/contact.html" />
+    <meta property="og:type" content="website" />
+
     <script src="index.js" defer></script>
-
-
     <title>Contact Me | Nathanael King</title>
 </head>
 <body>
     <header>
-    <nav class="navbar">
-        <div class="nav-left"><img src="pics/space_rd.jpg" alt="Logo image"></div>
-        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact Me</a></li>
-        </ul>
-        <div class="nav-right">Nathanael King<span>.dev</span></div>
-    </nav>
+        <nav class="navbar">
+            <div class="nav-left"><img src="pics/space_rd.jpg" alt="Nathanael King logo"></div>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact Me</a></li>
+            </ul>
+            <div class="nav-right">Nathanael King<span>.dev</span></div>
+        </nav>
     </header>
-     <form action="https://formspree.io/f/xqapnzee" method="POST" class="contact-form">
+    <form action="https://formspree.io/f/xqapnzee" method="POST" class="contact-form">
         <h1>Contact Me</h1>
+        <p class="contact-intro">Have a project in mind or just want to say hello? I usually respond within 24 hours.</p>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required />
         <label for="email">Your email:</label>
         <input type="email" id="email" name="email" placeholder="you@example.com" required />
-      
         <label for="message">Your message:</label>
         <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
-      
         <button type="submit" class="cta-button">Send</button>
-      </form>
-      
-   <footer>
-    <p>© 2025 Nathanael King. All rights reserved.</p>
-  </footer>
+    </form>
+    <footer>
+        <p>&copy; 2026 Nathanael King. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/DeviousWings" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/nathanaelking91" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
