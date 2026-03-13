@@ -5,63 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css" />
     <meta name="description" content="Learn about Nathanael King, his experience, technical background, and web development skills." />
-    <script src="index.js" defer></script>
 
-    <!-- <link type="text/css" rel="stylesheet" href="styles/about.css" />
-    <link type="text/css" rel="stylesheet" href="styles/nav-bar.css" /> -->
-            <title>About Me | Nathanael King</title>
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="About Me | Nathanael King" />
+    <meta property="og:description" content="Learn about Nathanael King, his experience, technical background, and web development skills." />
+    <meta property="og:image" content="https://deviouswings.github.io/PortDev/pics/portrait.jpg" />
+    <meta property="og:url" content="https://deviouswings.github.io/PortDev/about.html" />
+    <meta property="og:type" content="website" />
+
+    <script src="index.js" defer></script>
+    <title>About Me | Nathanael King</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-left">
-        <img src="pics/space_rd.jpg" alt="Logo image" />
-      </div>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
-      <div class="nav-right">Nathanael King<span>.dev</span></div>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="pics/space_rd.jpg" alt="Nathanael King logo" />
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="nav-right">Nathanael King<span>.dev</span></div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about-card">
+                <img src="pics/portrait.jpg" alt="Nathanael King" class="about-image" />
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Nathanael King — a passionate and dedicated web developer who specializes
+                        in building responsive, accessible, and modern websites. I thrive on solving real-world
+                        problems with clean, efficient code and thoughtful design.
+                    </p>
+                    <p>
+                        I'm currently open to both freelance and full-time opportunities where I can continue
+                        learning, growing, and contributing to impactful digital projects.
+                    </p>
+                    <p><strong>Skills:</strong> HTML5 · CSS3 / SCSS · JavaScript · Node.js · Responsive Design · Git</p>
+                </div>
+            </div>
+        </section>
 
-  <main>
-    <section class="about">
-      <div class="about-card">
-        <img src="pics/portrait.jpg" alt="Nathanael King" class="about-image" />
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>
-            Hello! I'm Nathanael King — a passionate and dedicated web developer who specializes in building responsive, accessible, and modern websites. I thrive on solving real-world problems with clean, efficient code and thoughtful design.
-          </p>
-          <p>
-            I'm currently open to both freelance and full-time opportunities where I can continue learning, growing, and contributing to impactful digital projects.
-          </p>
+        <hr class="section-divider" />
+
+        <section class="projects">
+            <h2>Main Projects</h2>
+            <div class="project-grid">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Nathanael King. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/DeviousWings" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/nathanaelking91" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-      </div>
-    </section>
-    
-    <hr class="section-divider" />
-
-    <section class="projects">
-      <h2>Main Projects</h2>
-      <div class="project-grid">
-        
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Nathanael King. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="contact.html">Contact</a>
-      <a href="https://github.com/DeviousWings">GitHub</a>
-      <a href="https://linkedin.com/in/nathanaelking91">LinkedIn</a>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
